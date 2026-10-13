@@ -8,13 +8,16 @@
   <style>
     :root{--ink:#2B1A0E;--medium:#7E593D;--gold:#B4946E;--champagne:#E6CFB8;--paper:#FBF8F4;--blush:#F5EAE5;--sand:#F4EDE5;--line:#DDC9B7}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{width:100%;margin:0;color:var(--ink);background:var(--paper);font-family:"Open Sans",sans-serif}h1,h2,h3{font-family:"NewYork",Georgia,serif;font-weight:400}a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}:focus-visible{outline:3px solid var(--medium);outline-offset:4px}[hidden]{display:none!important}
-    .site-header{position:sticky;top:0;z-index:30;background:rgba(251,248,244,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.header-inner{max-width:1480px;min-height:82px;padding:12px clamp(18px,4vw,64px);margin:auto;display:flex;align-items:center;gap:24px}.brand-placeholder{display:flex;align-items:center;justify-content:center;width:clamp(280px,20vw,420px);min-height:70px;padding:0;background:transparent;border:0}.brand-placeholder img{display:block;width:100%;max-width:100%;max-height:68px;object-fit:contain;object-position:center}.main-nav{display:flex;align-items:center;gap:clamp(14px,2vw,30px);margin-left:auto}.main-nav a,.dropdown-trigger{font:600 11px "Open Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--ink)}.main-nav a:hover,.dropdown-trigger:hover,.main-nav a[aria-current=page]{color:#704827}.dropdown{position:relative}.dropdown-trigger{display:flex;align-items:center;gap:7px;padding:12px 0;border:0;background:none;cursor:pointer}.dropdown-trigger svg{width:14px;height:14px}.dropdown-panel{display:none;position:absolute;top:100%;left:-16px;min-width:245px;max-width:320px;padding:10px;background:white;border:1px solid var(--line);box-shadow:0 18px 35px #2b1a0e17}.dropdown.open .dropdown-panel{display:grid}.dropdown-panel a{padding:11px 12px;line-height:1.45}.dropdown-panel a:hover{background:var(--blush)}.language{display:flex;align-items:center;gap:3px;white-space:nowrap}.language button,.menu-toggle{border:0;background:none;color:var(--ink);cursor:pointer;padding:9px;font:600 12px "Open Sans",sans-serif}.language button[aria-pressed=true]{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:5px}.menu-toggle{display:none}.menu-toggle svg{width:23px;height:23px}
-    .hero{position:relative;min-height:calc(86 * min(var(--vh, 1vh), 1vh));display:flex;align-items:center;overflow:hidden;background:#4B3529}.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero.video-fallback video{display:none}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,26,14,.77),rgba(43,26,14,.42) 66%,rgba(43,26,14,.25))}.hero-content{position:relative;z-index:1;width:100%;max-width:1480px;margin:auto;padding:100px clamp(25px,8vw,125px);color:white}.eyebrow{display:block;color:#765235;text-transform:uppercase;letter-spacing:.24em;font-size:11px;line-height:1.7;font-weight:700}.hero .eyebrow{color:var(--champagne)}.hero h1{max-width:850px;margin:20px 0 22px;font-size:clamp(48px,7vw,105px);line-height:1.05;letter-spacing:-.045em}.hero p{max-width:620px;color:#F8EEE6;line-height:1.85;font-size:clamp(15px,1.3vw,18px)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:12px 24px;border:1px solid var(--gold);background:transparent;color:var(--ink);text-decoration:none;text-align:center;text-transform:uppercase;letter-spacing:.12em;font:700 11px "Open Sans",sans-serif;cursor:pointer;transition:background .25s,transform .25s,box-shadow .25s}.btn:hover{background:var(--champagne);transform:translateY(-2px);box-shadow:0 8px 20px #2b1a0e19}.btn-primary{background:var(--champagne);border-color:var(--champagne)}.btn-primary:hover{background:#F1DECA}.hero .btn:not(.btn-primary){border-color:#F1DFCF;color:white}.hero .btn:not(.btn-primary):hover{color:var(--ink)}
-    .home-section{padding:clamp(78px,9vw,135px) clamp(24px,5vw,70px);border-top:1px solid var(--line)}.section-inner{max-width:1320px;margin:auto}.home-welcome{background:var(--blush);text-align:center}.home-welcome .section-inner{max-width:850px}.home-events{background:var(--paper)}.home-services{background:var(--sand)}.home-experience{background:var(--ink);color:white}.home-experience .eyebrow{color:var(--champagne)}.home-experience .section-inner{max-width:890px;text-align:center}.home-experience .intro{color:#F4E7DA;margin-inline:auto}.home-gallery{background:white}.home-cta{background:var(--blush);text-align:center}.home-cta .section-inner{max-width:840px}.home-cta .actions{justify-content:center}.section-title{font-size:clamp(35px,4.5vw,62px);line-height:1.1;letter-spacing:-.035em;margin:17px 0 25px}.section-heading{max-width:770px;margin-bottom:45px}.intro{max-width:700px;color:#604D40;font-size:clamp(15px,1.3vw,18px);line-height:1.85}.home-welcome .intro,.home-cta .intro{margin-inline:auto}.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.service-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.feature-card{display:flex;flex-direction:column;align-items:flex-start;min-height:275px;padding:34px 29px;background:white;border:1px solid var(--line);box-shadow:0 8px 28px #4925050b;transition:transform .3s,border-color .3s,box-shadow .3s}.feature-card:hover,.feature-card:focus-within{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 18px 35px #49250519}.feature-card .number{font-size:11px;letter-spacing:.18em;color:#765235}.feature-card h2,.feature-card h3{font-size:clamp(25px,2.3vw,34px);line-height:1.18;margin:25px 0 12px}.feature-card p{color:#604D40;line-height:1.75;font-size:14px;margin:0 0 24px}.feature-card a{margin-top:auto;color:#60402B;text-decoration:underline;text-underline-offset:5px;font-size:12px;font-weight:700}.service-grid .feature-card{min-height:310px}
-    .page-wrap{max-width:1320px;margin:auto;padding:clamp(65px,8vw,115px) clamp(24px,5vw,70px)}.page-lead{border-top:1px solid var(--gold);padding-top:35px;margin-bottom:55px}.page-lead h1{font-size:clamp(44px,5.7vw,78px);line-height:1.1;letter-spacing:-.035em;margin:16px 0 22px}.fine-rule{border:0;height:1px;background:var(--line);margin:60px 0}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.gallery-slot{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(145deg,#F8F1EA,#EADBD0);border:1px solid var(--line);transition:transform .35s,box-shadow .35s}.gallery-slot:before{content:"";position:absolute;inset:13px;border:1px solid #B4946E77;pointer-events:none}.gallery-slot:hover{transform:translateY(-4px);box-shadow:0 16px 35px #49250520}.wedding-photo-card{display:block}.wedding-photo{display:block;width:100%;height:100%;min-width:80px;min-height:80px;position:absolute;inset:0;object-fit:cover;transition:transform .45s,filter .35s}.wedding-photo-card:hover .wedding-photo{transform:scale(1.05)}.wedding-photo-card.photo-fallback:after{content:'Wedding photo / Foto de boda';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;background:linear-gradient(145deg,#F8F1EA,#EADBD0);color:#624934;font:400 20px "NewYork",Georgia,serif}.sweet-sixteen-photo-card.photo-fallback:after{content:'Sweet Sixteen photo / Foto de Sweet Sixteen'}.quinceanera-photo-card.photo-fallback:after{content:'Quinceañera photo / Foto de 15 años'}.robot-show-photo-card.photo-fallback:after{content:'Robot show photo / Foto de show de robots'}.sound-system-photo-card.photo-fallback:after{content:'Sound system photo / Foto de sonido'}.lighting-photo-card.photo-fallback:after{content:'Lighting photo / Foto de iluminación'}.dancing-on-clouds-photo-card.photo-fallback:after{content:'Dancing on the Clouds photo / Foto de Baile sobre las Nubes'}
-    .slot-label{display:none}.service-illustration{width:100%;aspect-ratio:16/6;border:1px solid var(--line);background:linear-gradient(130deg,#F9F3EC,#EDDCD4);display:flex;align-items:center;justify-content:center;color:#795D48;font:400 clamp(24px,4vw,48px) "NewYork",Georgia,serif;text-align:center;padding:25px}.related-links{display:flex;flex-wrap:wrap;gap:12px}.related-links a{padding:13px 18px;border:1px solid var(--line);background:white;color:var(--ink);text-decoration:none;font-size:13px}.related-links a:hover{border-color:var(--gold);background:var(--blush)}.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(35px,7vw,100px)}.contact-form{padding:clamp(22px,4vw,42px);border:1px solid var(--line);background:white;box-shadow:0 12px 35px #4925050b}.field{margin-bottom:20px}.field label{display:block;margin-bottom:8px;color:#553A29;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #AD9886;border-radius:0;background:#FFFCF9;color:var(--ink);font:inherit}.field textarea{min-height:125px;resize:vertical}.contact-form button:disabled{opacity:.55;cursor:not-allowed;transform:none}.notice{color:#604D40;font-size:13px;line-height:1.65}
-    #route-extras:not([hidden]){display:block}.site-footer{background:var(--ink);padding:65px clamp(24px,5vw,70px) 30px;color:#F4E7DA}.footer-inner{max-width:1320px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:42px}.footer-title{font:400 29px "NewYork",Georgia,serif;margin:0 0 15px}.footer-copy{color:#E6CFB8;line-height:1.8;font-size:13px;max-width:310px}.footer-label{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:var(--champagne);margin:0 0 18px}.footer-links{display:grid;gap:13px}.site-footer a{color:#F4E7DA;text-decoration:none;font-size:13px}.site-footer a:hover{text-decoration:underline;text-underline-offset:4px}.footer-language button{color:white}.footer-bottom{max-width:1320px;margin:55px auto 0;padding-top:22px;border-top:1px solid #ffffff40;color:#E6CFB8;font-size:12px}.whatsapp{position:fixed;z-index:1000;bottom:22px;right:22px;width:56px;height:56px;display:flex;align-items:center;justify-content:center;pointer-events:auto;border:1px solid var(--champagne);border-radius:50%;background:#25D366;color:white;cursor:pointer;font-weight:700;box-shadow:0 8px 25px #2b1a0e45}.whatsapp svg{width:29px;height:29px;fill:currentColor;stroke:var(--ink);stroke-width:1.5}.whatsapp-note{position:fixed;z-index:41;right:22px;bottom:87px;max-width:270px;padding:16px;background:white;border:1px solid var(--gold);color:var(--ink);box-shadow:0 8px 30px #2b1a0e26;font-size:13px;line-height:1.5}
-    @media(max-width:1050px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:980px){.header-inner{gap:8px}.brand-placeholder{margin-right:auto}.menu-toggle{display:block}.main-nav{display:none;position:absolute;top:100%;left:0;right:0;max-height:calc(80 * min(var(--vh, 1vh), 1vh));overflow:auto;background:var(--paper);padding:18px 25px 26px;border-bottom:1px solid var(--gold);box-shadow:0 16px 25px #2b1a0e15}.main-nav.open{display:flex;flex-direction:column;align-items:stretch;gap:0}.main-nav>a{padding:13px 0}.dropdown-trigger{width:100%;justify-content:space-between;padding:13px 0}.dropdown-panel{position:static;width:100%;max-width:none;box-shadow:none;margin-bottom:8px}}@media(max-width:700px){.hero{min-height:calc(75 * min(var(--vh, 1vh), 1vh))}.hero-content{padding:75px 25px}.feature-grid,.contact-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-inner{grid-template-columns:1fr 1fr}.footer-inner>div:first-child{grid-column:1/-1}}@media(max-width:450px){.gallery{grid-template-columns:1fr}.brand-placeholder{width:clamp(220px,70vw,300px);min-height:62px}.brand-placeholder img{max-height:58px}.footer-inner{grid-template-columns:1fr}.footer-inner>div:first-child{grid-column:auto}.home-section{padding-block:75px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+    .site-header{position:sticky;top:0;z-index:30;background:rgba(251,248,244,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.header-inner{max-width:1480px;min-height:82px;padding:12px clamp(18px,4vw,64px);margin:auto;display:flex;align-items:center;gap:24px}.brand-placeholder{display:flex;align-items:center;justify-content:center;width:clamp(280px,20vw,420px);min-height:70px}.brand-placeholder img{display:block;width:100%;max-height:68px;object-fit:contain}.main-nav{display:flex;align-items:center;gap:clamp(14px,2vw,30px);margin-left:auto}.main-nav a,.dropdown-trigger{font:600 11px "Open Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--ink)}.main-nav a:hover,.dropdown-trigger:hover,.main-nav a[aria-current=page]{color:#704827}.dropdown{position:relative}.dropdown-trigger{display:flex;align-items:center;gap:7px;padding:12px 0;border:0;background:none;cursor:pointer}.dropdown-trigger svg{width:14px;height:14px}.dropdown-panel{display:none;position:absolute;top:100%;left:-16px;min-width:245px;max-width:320px;padding:10px;background:white;border:1px solid var(--line);box-shadow:0 18px 35px #2b1a0e17}.dropdown.open .dropdown-panel{display:grid}.dropdown-panel a{padding:11px 12px;line-height:1.45}.dropdown-panel a:hover{background:var(--blush)}.language{display:flex;align-items:center;gap:3px;white-space:nowrap}.language button,.menu-toggle{border:0;background:none;color:var(--ink);cursor:pointer;padding:9px;font:600 12px "Open Sans",sans-serif}.language button[aria-pressed=true]{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:5px}.menu-toggle{display:none}.menu-toggle svg{width:23px;height:23px}
+    .hero{position:relative;min-height:calc(86 * min(var(--vh, 1vh), 1vh));display:flex;align-items:center;overflow:hidden;background:#4B3529}.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,26,14,.77),rgba(43,26,14,.42) 66%,rgba(43,26,14,.25))}.hero-content{position:relative;z-index:1;width:100%;max-width:1480px;margin:auto;padding:100px clamp(25px,8vw,125px);color:white}.eyebrow{display:block;color:#765235;text-transform:uppercase;letter-spacing:.24em;font-size:11px;line-height:1.7;font-weight:700}.hero .eyebrow{color:var(--champagne)}.hero h1{max-width:850px;margin:20px 0 22px;font-size:clamp(48px,7vw,105px);line-height:1.05;letter-spacing:-.045em}.hero p{max-width:620px;color:#F8EEE6;line-height:1.85;font-size:clamp(15px,1.3vw,18px)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:12px 24px;border:1px solid var(--gold);background:transparent;color:var(--ink);text-decoration:none;text-align:center;text-transform:uppercase;letter-spacing:.12em;font:700 11px "Open Sans",sans-serif;cursor:pointer;transition:background .25s,transform .25s,box-shadow .25s}.btn:hover{background:var(--champagne);transform:translateY(-2px);box-shadow:0 8px 20px #2b1a0e19}.btn-primary{background:var(--champagne);border-color:var(--champagne)}.btn-primary:hover{background:#F1DECA}.hero .btn:not(.btn-primary){border-color:#F1DFCF;color:white}.hero .btn:not(.btn-primary):hover{color:var(--ink)}
+    .home-section{padding:clamp(78px,9vw,135px) clamp(24px,5vw,70px);border-top:1px solid var(--line)}.section-inner{max-width:1320px;margin:auto}.home-welcome{background:var(--blush);text-align:center}.home-welcome .section-inner{max-width:850px}.home-events{background:var(--paper)}.home-services{background:var(--sand)}.home-experience{background:var(--ink);color:white}.home-experience .eyebrow{color:var(--champagne)}.home-experience .section-inner{max-width:890px;text-align:center}.home-experience .intro{color:#F4E7DA;margin-inline:auto}.home-gallery{background:white}.home-cta{background:var(--blush);text-align:center}.home-cta .section-inner{max-width:840px}.home-cta .actions{justify-content:center}.section-title{font-size:clamp(35px,4.5vw,62px);line-height:1.1;letter-spacing:-.035em;margin:17px 0 25px}.section-heading{max-width:770px;margin-bottom:45px}.intro{max-width:700px;color:#604D40;font-size:clamp(15px,1.3vw,18px);line-height:1.85}.home-welcome .intro,.home-cta .intro{margin-inline:auto}.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.service-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.feature-card{display:flex;flex-direction:column;align-items:flex-start;min-height:275px;padding:34px 29px;background:white;border:1px solid var(--line);box-shadow:0 8px 28px #4925050b;transition:transform .3s,border-color .3s,box-shadow .3s}.feature-card:hover,.feature-card:focus-within{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 18px 35px #49250519}.feature-card .number{font-size:11px;letter-spacing:.18em;color:#765235}.feature-card h2,.feature-card h3{font-size:clamp(25px,2.3vw,34px);line-height:1.18;margin:25px 0 12px}.feature-card p{color:#604D40;line-height:1.75;font-size:14px;margin:0 0 24px}.feature-card a{margin-top:auto;color:#60402B;text-decoration:underline;text-underline-offset:5px;font-size:12px;font-weight:700}.service-grid .feature-card{min-height:310px}.home-feature-image-wrap{width:100%;overflow:hidden}.home-card-image{display:block;width:100%;height:180px;object-fit:cover}.home-experience-image{display:block;width:100%;max-height:430px;object-fit:cover;margin-bottom:35px}.home-editorial{background:#F4EDE5}.editorial-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(35px,7vw,100px);align-items:center}.editorial-image{display:block;width:100%;height:clamp(380px,48vw,650px);object-fit:cover;filter:grayscale(100%)}.editorial-copy{max-width:560px}.editorial-copy .eyebrow{color:#765235}.editorial-copy .section-title{margin-top:15px}.editorial-copy .intro{margin-bottom:18px}.editorial-copy p:not(.intro){max-width:500px;color:#604D40;line-height:1.85;font-size:14px}@media(max-width:700px){.editorial-grid{grid-template-columns:1fr}.editorial-image{height:clamp(330px,90vw,520px)}.editorial-copy{max-width:none}}
+    .page-wrap{max-width:1320px;margin:auto;padding:clamp(65px,8vw,115px) clamp(24px,5vw,70px)}.page-lead{border-top:1px solid var(--gold);padding-top:35px;margin-bottom:55px}.page-lead h1{font-size:clamp(44px,5.7vw,78px);line-height:1.1;letter-spacing:-.035em;margin:16px 0 22px}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.gallery-slot{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(145deg,#F8F1EA,#EADBD0);border:1px solid var(--line)}.gallery-slot img{display:block;width:100%;height:100%;object-fit:cover}.service-illustration{width:100%;aspect-ratio:16/6;border:1px solid var(--line);background:linear-gradient(130deg,#F9F3EC,#EDDCD4);display:flex;align-items:center;justify-content:center;color:#795D48;font:400 clamp(24px,4vw,48px) "NewYork",Georgia,serif;text-align:center;padding:25px}.related-links{display:flex;flex-wrap:wrap;gap:12px}.related-links a{padding:13px 18px;border:1px solid var(--line);background:white;color:var(--ink);text-decoration:none;font-size:13px}.related-links a:hover{border-color:var(--gold);background:var(--blush)}.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(35px,7vw,100px)}.contact-form{padding:clamp(22px,4vw,42px);border:1px solid var(--line);background:white;box-shadow:0 12px 35px #4925050b}.field{margin-bottom:20px}.field label{display:block;margin-bottom:8px;color:#553A29;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #AD9886;border-radius:0;background:#FFFCF9;color:var(--ink);font:inherit}.field textarea{min-height:125px;resize:vertical}.contact-form button:disabled{opacity:.55;cursor:not-allowed;transform:none}.notice{color:#604D40;font-size:13px;line-height:1.65}
+    .site-footer{background:var(--ink);padding:65px clamp(24px,5vw,70px) 30px;color:#F4E7DA}.footer-inner{max-width:1320px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:42px}.footer-title{font:400 29px "NewYork",Georgia,serif;margin:0 0 15px}.footer-copy{color:#E6CFB8;line-height:1.8;font-size:13px;max-width:310px}.footer-label{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:var(--champagne);margin:0 0 18px}.footer-links{display:grid;gap:13px}.site-footer a{color:#F4E7DA;text-decoration:none;font-size:13px}.site-footer a:hover{text-decoration:underline;text-underline-offset:4px}.footer-language button{color:white}.footer-bottom{max-width:1320px;margin:55px auto 0;padding-top:22px;border-top:1px solid #ffffff40;color:#E6CFB8;font-size:12px}.whatsapp{position:fixed;z-index:1000;bottom:22px;right:22px;width:56px;height:56px;display:flex;align-items:center;justify-content:center;border:1px solid var(--champagne);border-radius:50%;background:#25D366;color:white;box-shadow:0 8px 25px #2b1a0e45}.whatsapp svg{width:29px;height:29px;fill:currentColor;stroke:var(--ink);stroke-width:1.5}
+    @media(max-width:1050px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:980px){.header-inner{gap:8px}.brand-placeholder{margin-right:auto}.menu-toggle{display:block}.main-nav{display:none;position:absolute;top:100%;left:0;right:0;max-height:calc(80 * min(var(--vh, 1vh), 1vh));overflow:auto;background:var(--paper);padding:18px 25px 26px;border-bottom:1px solid var(--gold);box-shadow:0 16px 25px #2b1a0e15}.main-nav.open{display:flex;flex-direction:column;align-items:stretch;gap:0}.main-nav>a{padding:13px 0}.dropdown-trigger{width:100%;justify-content:space-between;padding:13px 0}.dropdown-panel{position:static;width:100%;max-width:none;box-shadow:none;margin-bottom:8px}}
+    @media(max-width:700px){.hero{min-height:calc(75 * min(var(--vh, 1vh), 1vh))}.hero-content{padding:75px 25px}.feature-grid,.contact-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-inner{grid-template-columns:1fr 1fr}.footer-inner>div:first-child{grid-column:1/-1}}
+    @media(max-width:450px){.gallery{grid-template-columns:1fr}.brand-placeholder{width:clamp(220px,70vw,300px);min-height:62px}.brand-placeholder img{max-height:58px}.footer-inner{grid-template-columns:1fr}.footer-inner>div:first-child{grid-column:auto}.home-section{padding-block:75px}.service-grid{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
   </style>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
   <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
@@ -24,34 +27,43 @@
  </head>
  <body data-template-id="__page-root" style="background: rgb(251, 248, 244);">
   <header class="site-header">
-   <div class="header-inner"><a class="brand-placeholder" href="/" data-route="/" aria-label="Home / Inicio"><img data-template-id="brand-logo" class="canva-image" loading="lazy" onerror="if(this.src.endsWith('.png')){this.src='https://i.imgur.com/bN6h0aO.jpg';}" src="https://i.imgur.com/bN6h0aO.png" alt="DJ Fernan Entertainment"></a>
-    <nav id="main-nav" class="main-nav" aria-label="Main navigation"><a href="/" data-route="/" data-en="Home" data-es="Inicio">Home</a>
-     <div class="dropdown">
-      <button class="dropdown-trigger" type="button" aria-expanded="false" aria-haspopup="true"><span data-en="Events" data-es="Eventos">Events</span><i data-lucide="chevron-down" aria-hidden="true"></i></button>
-      <div class="dropdown-panel"><a href="/weddings" data-route="/weddings" data-en="Weddings" data-es="Bodas">Weddings</a> <a href="/sweet-sixteen" data-route="/sweet-sixteen" data-en="Sweet Sixteen" data-es="Dulces Dieciséis">Sweet Sixteen</a> <a href="/quinceaneras" data-route="/quinceaneras" data-en="Fifteen Years" data-es="Quinceañeras / 15 Años">Fifteen Years</a>
+   <div class="header-inner">
+    <a class="brand-placeholder" href="#/" data-route="/" aria-label="Home / Inicio"><img data-template-id="brand-logo" class="canva-image" loading="lazy" src="https://i.imgur.com/bN6h0aO.png" alt="DJ Fernan Entertainment"></a>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+     <a href="#/" data-route="/" data-en="Home" data-es="Inicio">Home</a>
+     <div class="dropdown"><button class="dropdown-trigger" type="button" aria-expanded="false"><span data-en="Events" data-es="Eventos">Events</span><i data-lucide="chevron-down" aria-hidden="true"></i></button>
+      <div class="dropdown-panel">
+       <a href="#/weddings" data-route="/weddings" data-en="Weddings" data-es="Bodas">Weddings</a> <a href="#/sweet-sixteen" data-route="/sweet-sixteen" data-en="Sweet Sixteen" data-es="Dulces Dieciséis">Sweet Sixteen</a> <a href="#/quinceaneras" data-route="/quinceaneras" data-en="Fifteen Years" data-es="Quinceañeras / 15 Años">Fifteen Years</a>
       </div>
      </div>
-     <div class="dropdown">
-      <button class="dropdown-trigger" type="button" aria-expanded="false" aria-haspopup="true"><span data-en="Services" data-es="Servicios">Services</span><i data-lucide="chevron-down" aria-hidden="true"></i></button>
-      <div class="dropdown-panel"><a href="/services" data-route="/services" data-en="All services" data-es="Todos los servicios">All services</a> <a href="/robot-show" data-route="/robot-show" data-en="Robot Show" data-es="Show de Robot">Robot Show</a> <a href="/sound-system" data-route="/sound-system" data-en="Professional Sound System" data-es="Sistema de Sonido Profesional">Professional Sound System</a> <a href="/lighting" data-route="/lighting" data-en="Lighting with Sparkle Effects" data-es="Iluminación con Efectos de Destellos">Lighting with Sparkle Effects</a> <a href="/dancing-on-the-clouds" data-route="/dancing-on-the-clouds" data-en="Dancing on the Clouds" data-es="Baile sobre las Nubes">Dancing on the Clouds</a>
+     <div class="dropdown"><button class="dropdown-trigger" type="button" aria-expanded="false"><span data-en="Services" data-es="Servicios">Services</span><i data-lucide="chevron-down" aria-hidden="true"></i></button>
+      <div class="dropdown-panel">
+       <a href="#/services" data-route="/services" data-en="All services" data-es="Todos los servicios">All services</a> <a href="#/robot-show" data-route="/robot-show" data-en="Robot Show" data-es="Show de Robot">Robot Show</a> <a href="#/sound-system" data-route="/sound-system" data-en="Professional Sound System" data-es="Sistema de Sonido Profesional">Professional Sound System</a> <a href="#/lighting" data-route="/lighting" data-en="Lighting with Sparkle Effects" data-es="Iluminación con Efectos de Destellos">Lighting with Sparkle Effects</a> <a href="#/dancing-on-the-clouds" data-route="/dancing-on-the-clouds" data-en="Dancing on the Clouds" data-es="Baile sobre las Nubes">Dancing on the Clouds</a>
       </div>
-     </div><a href="/contact" data-route="/contact" data-en="Contact" data-es="Contacto">Contact</a>
+     </div><a href="#/contact" data-route="/contact" data-en="Contact" data-es="Contacto">Contact</a>
     </nav>
-    <div class="language" aria-label="Language / Idioma">
-     <button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="es" aria-pressed="false">ES</button>
+    <div class="language" aria-label="Language / Idioma"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="es" aria-pressed="false">ES</button>
     </div><button id="menu-toggle" class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu"><i data-lucide="menu" aria-hidden="true"></i></button>
    </div>
   </header>
   <main>
    <section class="view hero" data-view="/" aria-labelledby="home-title">
-    <video autoplay="" muted="" loop="" playsinline="" preload="metadata" aria-hidden="true">
-     <source src="./hero.mp4" type="video/mp4">
+    <video autoplay="" muted="" loop="" playsinline="" preload="metadata" aria-hidden="true"><source src="./hero.mp4" type="video/mp4">
     </video>
-    <div class="hero-content"><span class="eyebrow" data-en="Thoughtfully celebrated" data-es="Celebraciones con intención">Thoughtfully celebrated</span>
+    <div class="hero-content">
+     <span class="eyebrow" data-en="Thoughtfully celebrated" data-es="Celebraciones con intención">Thoughtfully celebrated</span>
      <h1 id="home-title" data-template-id="home-title" class="canva-text" data-en="A moment to remember. A story to tell." data-es="Un momento para recordar. Una historia para contar." style="color: rgb(255, 255, 255);">A moment to remember. A story to tell.</h1>
      <p data-en="Beautiful celebrations begin with the feeling you want to share. Explore experiences made for your most meaningful occasions." data-es="Las celebraciones hermosas comienzan con lo que deseas compartir. Descubre experiencias para tus ocasiones más especiales.">Beautiful celebrations begin with the feeling you want to share. Explore experiences made for your most meaningful occasions.</p>
-     <div class="actions">
-      <a class="btn btn-primary" href="/services" data-route="/services" data-en="Explore services" data-es="Explorar servicios">Explore services</a><a class="btn" href="/contact" data-route="/contact" data-en="Contact us" data-es="Contáctanos">Contact us</a>
+     <div class="actions"><a class="btn btn-primary" href="#/services" data-route="/services" data-en="Explore services" data-es="Explorar servicios">Explore services</a><a class="btn" href="#/contact" data-route="/contact" data-en="Contact us" data-es="Contáctanos">Contact us</a>
+     </div>
+    </div>
+   </section>
+   <section class="view home-section home-editorial" data-view="/" aria-labelledby="editorial-title">
+    <div class="section-inner editorial-grid"><img data-template-id="editorial-experience-image" class="canva-image editorial-image" loading="lazy" src="canva://MAHX7GxwnBg/1" alt="Editorial event entertainment presentation">
+     <div class="editorial-copy"><span class="eyebrow" data-en="The experience" data-es="La experiencia">The experience</span>
+      <h2 id="editorial-title" data-template-id="editorial-title" class="canva-text section-title" data-en="Why choose DJFernanEvents...?" data-es="¿Por qué elegir DJFernanEvents...?" style="color: rgb(43, 26, 14);">Why choose DJFernanEvents...?</h2>
+      <p class="intro" data-en="The team behind unforgettable event experiences." data-es="La empresa detrás de experiencias memorables para eventos.">The team behind unforgettable event experiences.</p>
+      <p data-en="DJFernanEvents creates memorable event experiences through music, talent, and personalized attention. With care and experience, we transform every celebration into a story worth remembering. Thoughtfully planned, warmly delivered, and made to feel entirely yours." data-es="DJFernanEvents crea experiencias memorables para eventos con música, talento y atención personalizada. Con experiencia y dedicación, transformamos cada celebración en una historia para recordar. Planeada con belleza, entregada con calidez y hecha completamente para ti.">DJFernanEvents creates memorable event experiences through music, talent, and personalized attention. With care and experience, we transform every celebration into a story worth remembering. Thoughtfully planned, warmly delivered, and made to feel entirely yours.</p>
      </div>
     </div>
    </section>
@@ -64,67 +76,71 @@
    </section>
    <section class="view home-section home-events" data-view="/" aria-labelledby="events-home-title">
     <div class="section-inner">
-     <div class="section-heading">
-      <span class="eyebrow" data-en="The occasions" data-es="Las ocasiones">The occasions</span>
+     <div class="section-heading"><span class="eyebrow" data-en="The occasions" data-es="Las ocasiones">The occasions</span>
       <h2 id="events-home-title" data-template-id="events-home-title" class="canva-text section-title" data-en="Every milestone has a story." data-es="Cada celebración tiene una historia." style="color: rgb(43, 26, 14);">Every milestone has a story.</h2>
       <p class="intro" data-en="Find a beautiful way to celebrate the moments that matter to you." data-es="Encuentra una forma hermosa de celebrar los momentos que más importan.">Find a beautiful way to celebrate the moments that matter to you.</p>
      </div>
      <div class="feature-grid">
       <article class="feature-card">
-       <span class="number">01 /</span>
+       <div class="home-feature-image-wrap"><img data-template-id="home-weddings-image" class="canva-image home-card-image" loading="lazy" src="https://i.imgur.com/aBO9Beh.jpg" alt="Fotografía de boda existente en la galería del sitio">
+       </div><span class="number">01 /</span>
        <h3 data-en="Weddings" data-es="Bodas">Weddings</h3>
-       <p data-en="Make space for the meaningful moments, from your entrance to your first dance." data-es="Da lugar a los momentos más especiales, desde tu entrada hasta el primer baile.">Make space for the meaningful moments, from your entrance to your first dance.</p><a href="/weddings" data-route="/weddings" data-en="Explore weddings →" data-es="Descubrir bodas →">Explore weddings →</a>
+       <p data-en="Make space for the meaningful moments, from your entrance to your first dance." data-es="Da lugar a los momentos más especiales, desde tu entrada hasta el primer baile.">Make space for the meaningful moments, from your entrance to your first dance.</p><a href="#/weddings" data-route="/weddings" data-en="Explore weddings →" data-es="Descubrir bodas →">Explore weddings →</a>
       </article>
       <article class="feature-card">
-       <span class="number">02 /</span>
+       <div class="home-feature-image-wrap"><img data-template-id="home-sweet-image" class="canva-image home-card-image" loading="lazy" src="https://i.imgur.com/NzvxuQt.jpg" alt="Fotografía de Sweet Sixteen existente en la galería del sitio">
+       </div><span class="number">02 /</span>
        <h3 data-en="Sweet Sixteen" data-es="Dulces Dieciséis">Sweet Sixteen</h3>
-       <p data-en="Celebrate a new chapter with music, light, and moments to remember." data-es="Celebra un nuevo capítulo con música, luz y momentos para recordar.">Celebrate a new chapter with music, light, and moments to remember.</p><a href="/sweet-sixteen" data-route="/sweet-sixteen" data-en="Explore Sweet Sixteen →" data-es="Descubrir Dulces Dieciséis →">Explore Sweet Sixteen →</a>
+       <p data-en="Celebrate a new chapter with music, light, and moments to remember." data-es="Celebra un nuevo capítulo con música, luz y momentos para recordar.">Celebrate a new chapter with music, light, and moments to remember.</p><a href="#/sweet-sixteen" data-route="/sweet-sixteen" data-en="Explore Sweet Sixteen →" data-es="Descubrir Dulces Dieciséis →">Explore Sweet Sixteen →</a>
       </article>
       <article class="feature-card">
-       <span class="number">03 /</span>
+       <div class="home-feature-image-wrap"><img data-template-id="home-quince-image" class="canva-image home-card-image" loading="lazy" src="https://i.imgur.com/crv6U8F.jpg" alt="Fotografía de quinceañera existente en la galería del sitio">
+       </div><span class="number">03 /</span>
        <h3 data-en="Fifteen Years" data-es="Quinceañeras / 15 Años">Fifteen Years</h3>
-       <p data-en="Honor a treasured milestone with a celebration that feels entirely yours." data-es="Honra un momento inolvidable con una celebración que se sienta completamente tuya.">Honor a treasured milestone with a celebration that feels entirely yours.</p><a href="/quinceaneras" data-route="/quinceaneras" data-en="Explore Fifteen Years →" data-es="Explore Fifteen Years →">Explore quinceañeras →</a>
+       <p data-en="Honor a treasured milestone with a celebration that feels entirely yours." data-es="Honra un momento inolvidable con una celebración que se sienta completamente tuya.">Honor a treasured milestone with a celebration that feels entirely yours.</p><a href="#/quinceaneras" data-route="/quinceaneras" data-en="Explore Fifteen Years →" data-es="Descubrir quinceañeras →">Explore Fifteen Years →</a>
       </article>
      </div>
     </div>
    </section>
    <section class="view home-section home-services" data-view="/" aria-labelledby="services-home-title">
     <div class="section-inner">
-     <div class="section-heading">
-      <span class="eyebrow" data-en="The experience" data-es="La experiencia">The experience</span>
+     <div class="section-heading"><span class="eyebrow" data-en="The experience" data-es="La experiencia">The experience</span>
       <h2 id="services-home-title" data-template-id="services-home-title" class="canva-text section-title" data-en="Details that make the moment." data-es="Detalles que hacen especial cada momento." style="color: rgb(43, 26, 14);">Details that make the moment.</h2>
       <p class="intro" data-en="Explore the sounds, lights, and experiences that bring a celebration to life." data-es="Explora los sonidos, las luces y las experiencias que dan vida a una celebración.">Explore the sounds, lights, and experiences that bring a celebration to life.</p>
      </div>
      <div class="feature-grid service-grid">
       <article class="feature-card">
-       <span class="number">01 /</span>
+       <div class="home-feature-image-wrap"><img data-template-id="home-robot-image" class="canva-image home-card-image" loading="lazy" src="https://i.imgur.com/883fzR1.jpg" alt="Fotografía del show de robot existente en el sitio">
+       </div><span class="number">01 /</span>
        <h3 data-en="Robot Show" data-es="Show de Robot">Robot Show</h3>
-       <p data-en="A playful burst of energy for the dance floor." data-es="Una explosión de energía para la pista de baile.">A playful burst of energy for the dance floor.</p><a href="/robot-show" data-route="/robot-show" data-en="Discover the service →" data-es="Descubrir el servicio →">Discover the service →</a>
+       <p data-en="A playful burst of energy for the dance floor." data-es="Una explosión de energía para la pista de baile.">A playful burst of energy for the dance floor.</p><a href="#/robot-show" data-route="/robot-show" data-en="Discover the service →" data-es="Descubrir el servicio →">Discover the service →</a>
       </article>
       <article class="feature-card">
-       <span class="number">02 /</span>
+       <div class="home-feature-image-wrap"><img data-template-id="home-sound-image" class="canva-image home-card-image" loading="lazy" src="https://i.imgur.com/l2s9bHT.jpg" alt="Fotografía del sistema de sonido existente en el sitio">
+       </div><span class="number">02 /</span>
        <h3 data-en="Professional Sound System" data-es="Sistema de Sonido Profesional">Professional Sound System</h3>
-       <p data-en="Sound that accompanies every important moment." data-es="Sonido que acompaña cada momento importante.">Sound that accompanies every important moment.</p><a href="/sound-system" data-route="/sound-system" data-en="Discover the service →" data-es="Descubrir el servicio →">Discover the service →</a>
+       <p data-en="Sound that accompanies every important moment." data-es="Sonido que acompaña cada momento importante.">Sound that accompanies every important moment.</p><a href="#/sound-system" data-route="/sound-system" data-en="Discover the service →" data-es="Descubrir el servicio →">Discover the service →</a>
       </article>
       <article class="feature-card">
-       <span class="number">03 /</span>
+       <div class="home-feature-image-wrap"><img data-template-id="home-lighting-image" class="canva-image home-card-image" loading="lazy" src="https://i.imgur.com/My8w4SM.jpg" alt="Fotografía de iluminación existente en el sitio">
+       </div><span class="number">03 /</span>
        <h3 data-en="Lighting with Sparkle Effects" data-es="Iluminación con Efectos de Destellos">Lighting with Sparkle Effects</h3>
-       <p data-en="A warm atmosphere with a touch of sparkle." data-es="Un ambiente cálido con un toque de destellos.">A warm atmosphere with a touch of sparkle.</p><a href="/lighting" data-route="/lighting" data-en="Discover the service →" data-es="Descubrir el servicio →">Discover the service →</a>
+       <p data-en="A warm atmosphere with a touch of sparkle." data-es="Un ambiente cálido con un toque de destellos.">A warm atmosphere with a touch of sparkle.</p><a href="#/lighting" data-route="/lighting" data-en="Discover the service →" data-es="Descubrir el servicio →">Discover the service →</a>
       </article>
       <article class="feature-card">
-       <span class="number">04 /</span>
+       <div class="home-feature-image-wrap"><img data-template-id="home-clouds-image" class="canva-image home-card-image" loading="lazy" src="https://i.imgur.com/DxTUuOi.jpg" alt="Fotografía de baile sobre las nubes existente en el sitio">
+       </div><span class="number">04 /</span>
        <h3 data-en="Dancing on the Clouds" data-es="Baile sobre las Nubes">Dancing on the Clouds</h3>
-       <p data-en="A dreamlike setting for a dance to remember." data-es="Un escenario de ensueño para un baile inolvidable.">A dreamlike setting for a dance to remember.</p><a href="/dancing-on-the-clouds" data-route="/dancing-on-the-clouds" data-en="Discover the service →" data-es="Descubrir el servicio →">Discover the service →</a>
+       <p data-en="A dreamlike setting for a dance to remember." data-es="Un escenario de ensueño para un baile inolvidable.">A dreamlike setting for a dance to remember.</p><a href="#/dancing-on-the-clouds" data-route="/dancing-on-the-clouds" data-en="Discover the service →" data-es="Descubrir el servicio →">Discover the service →</a>
       </article>
      </div>
-     <div class="actions">
-      <a class="btn" href="/services" data-route="/services" data-en="View all services" data-es="Ver todos los servicios">View all services</a>
+     <div class="actions"><a class="btn" href="#/services" data-route="/services" data-en="View all services" data-es="Ver todos los servicios">View all services</a>
      </div>
     </div>
    </section>
    <section class="view home-section home-experience" data-view="/" aria-labelledby="experience-home-title">
     <div class="section-inner">
-     <span class="eyebrow" data-en="Made to be remembered" data-es="Creado para recordar">Made to be remembered</span>
+     <img data-template-id="home-experience-image" class="canva-image home-experience-image" loading="lazy" src="https://i.imgur.com/wHAvBQr.jpg" alt="Fotografía de celebración existente en la galería de bodas"> <span class="eyebrow" data-en="Made to be remembered" data-es="Creado para recordar">Made to be remembered</span>
      <h2 id="experience-home-title" data-template-id="experience-home-title" class="canva-text section-title" data-en="A celebration that feels like your story." data-es="Una celebración que se siente como tu historia." style="color: rgb(255, 255, 255);">A celebration that feels like your story.</h2>
      <p class="intro" data-en="The most memorable celebrations are filled with feeling. Bring together thoughtful details, beautiful atmosphere, and moments that invite everyone to be part of your story." data-es="Las celebraciones más memorables están llenas de emoción. Reúne detalles cuidados, un ambiente hermoso y momentos que invitan a todos a formar parte de tu historia.">The most memorable celebrations are filled with feeling. Bring together thoughtful details, beautiful atmosphere, and moments that invite everyone to be part of your story.</p>
     </div>
@@ -134,80 +150,74 @@
      <span class="eyebrow" data-en="Let's begin" data-es="Comencemos">Let's begin</span>
      <h2 id="cta-home-title" data-template-id="cta-home-title" class="canva-text section-title" data-en="Let's imagine what your day could feel like." data-es="Imaginemos cómo podría sentirse tu gran día." style="color: rgb(43, 26, 14);">Let's imagine what your day could feel like.</h2>
      <p class="intro" data-en="Tell us about the celebration you have in mind and the moments you would love to create." data-es="Cuéntanos sobre la celebración que imaginas y los momentos que te gustaría crear.">Tell us about the celebration you have in mind and the moments you would love to create.</p>
-     <div class="actions">
-      <a class="btn btn-primary" href="/contact" data-route="/contact" data-en="Request information" data-es="Solicitar información">Request information</a>
+     <div class="actions"><a class="btn btn-primary" href="#/contact" data-route="/contact" data-en="Request information" data-es="Solicitar información">Request information</a>
      </div>
     </div>
    </section>
    <section class="view page-wrap" data-view="/services" hidden="" aria-labelledby="services-title">
-    <div class="page-lead">
-     <span class="eyebrow" data-en="The experience" data-es="La experiencia">The experience</span>
+    <div class="page-lead"><span class="eyebrow" data-en="The experience" data-es="La experiencia">The experience</span>
      <h1 id="services-title" data-template-id="services-title" class="canva-text" data-en="Services with a little magic." data-es="Servicios con un toque de magia." style="color: rgb(43, 26, 14);">Services with a little magic.</h1>
      <p class="intro" data-en="From the first entrance to the final dance, discover details that bring energy, atmosphere, and wonder to your celebration." data-es="Desde la primera entrada hasta el último baile, descubre detalles que aportan energía, ambiente y encanto a tu celebración.">From the first entrance to the final dance, discover details that bring energy, atmosphere, and wonder to your celebration.</p>
     </div>
     <div class="feature-grid">
-     <article class="feature-card">
-      <span class="number">01 /</span>
+     <article class="feature-card"><span class="number">01 /</span>
       <h2 data-en="Robot Show" data-es="Show de Robot">Robot Show</h2>
-      <p data-en="An energetic moment for the dance floor." data-es="Un momento lleno de energía para la pista de baile.">An energetic moment for the dance floor.</p><a href="/robot-show" data-route="/robot-show" data-en="Discover this service →" data-es="Descubre este servicio →">Discover this service →</a>
+      <p data-en="An energetic moment for the dance floor." data-es="Un momento lleno de energía para la pista de baile.">An energetic moment for the dance floor.</p><a href="#/robot-show" data-route="/robot-show" data-en="Discover this service →" data-es="Descubre este servicio →">Discover this service →</a>
      </article>
-     <article class="feature-card">
-      <span class="number">02 /</span>
+     <article class="feature-card"><span class="number">02 /</span>
       <h2 data-en="Professional Sound System" data-es="Sistema de Sonido Profesional">Professional Sound System</h2>
-      <p data-en="Sound designed to carry every important moment." data-es="Sonido pensado para acompañar cada momento importante.">Sound designed to carry every important moment.</p><a href="/sound-system" data-route="/sound-system" data-en="Discover this service →" data-es="Descubre este servicio →">Discover this service →</a>
+      <p data-en="Sound designed to carry every important moment." data-es="Sonido pensado para acompañar cada momento importante.">Sound designed to carry every important moment.</p><a href="#/sound-system" data-route="/sound-system" data-en="Discover this service →" data-es="Descubre este servicio →">Discover this service →</a>
      </article>
-     <article class="feature-card">
-      <span class="number">03 /</span>
+     <article class="feature-card"><span class="number">03 /</span>
       <h2 data-en="Lighting with Sparkle Effects" data-es="Iluminación con Efectos de Destellos">Lighting with Sparkle Effects</h2>
-      <p data-en="Atmosphere and sparkle for a memorable scene." data-es="Ambiente y destellos para una escena memorable.">Atmosphere and sparkle for a memorable scene.</p><a href="/lighting" data-route="/lighting" data-en="Discover this service →" data-es="Descubre este servicio →">Discover this service →</a>
+      <p data-en="Atmosphere and sparkle for a memorable scene." data-es="Ambiente y destellos para una escena memorable.">Atmosphere and sparkle for a memorable scene.</p><a href="#/lighting" data-route="/lighting" data-en="Discover this service →" data-es="Descubre este servicio →">Discover this service →</a>
      </article>
-     <article class="feature-card">
-      <span class="number">04 /</span>
+     <article class="feature-card"><span class="number">04 /</span>
       <h2 data-en="Dancing on the Clouds" data-es="Baile sobre las Nubes">Dancing on the Clouds</h2>
-      <p data-en="A dreamlike setting for a special dance." data-es="Un escenario de ensueño para un baile especial.">A dreamlike setting for a special dance.</p><a href="/dancing-on-the-clouds" data-route="/dancing-on-the-clouds" data-en="Discover this service →" data-es="Descubre este servicio →">Discover this service →</a>
+      <p data-en="A dreamlike setting for a special dance." data-es="Un escenario de ensueño para un baile especial.">A dreamlike setting for a special dance.</p><a href="#/dancing-on-the-clouds" data-route="/dancing-on-the-clouds" data-en="Discover this service →" data-es="Descubre este servicio →">Discover this service →</a>
      </article>
-     <article class="feature-card">
-      <span class="number">05 /</span>
+     <article class="feature-card"><span class="number">05 /</span>
       <h2 data-en="Weddings" data-es="Bodas">Weddings</h2>
-      <p data-en="A celebration shaped around your story." data-es="Una celebración inspirada en tu historia.">A celebration shaped around your story.</p><a href="/weddings" data-route="/weddings" data-en="Explore weddings →" data-es="Descubre las bodas →">Explore weddings →</a>
+      <p data-en="A celebration shaped around your story." data-es="Una celebración inspirada en tu historia.">A celebration shaped around your story.</p><a href="#/weddings" data-route="/weddings" data-en="Explore weddings →" data-es="Descubre las bodas →">Explore weddings →</a>
      </article>
-     <article class="feature-card">
-      <span class="number">06 /</span>
+     <article class="feature-card"><span class="number">06 /</span>
       <h2 data-en="Sweet Sixteen &amp; Fifteen Years" data-es="Sweet Sixteen &amp; Fifteen Years">Sweet Sixteen &amp; Fifteen Years</h2>
-      <p data-en="Milestones worth celebrating beautifully." data-es="Momentos que merecen celebrarse de forma inolvidable.">Milestones worth celebrating beautifully.</p><a href="/sweet-sixteen" data-route="/sweet-sixteen" data-en="Explore celebrations →" data-es="Descubre las celebraciones →">Explore celebrations →</a>
+      <p data-en="Milestones worth celebrating beautifully." data-es="Momentos que merecen celebrarse de forma inolvidable.">Milestones worth celebrating beautifully.</p><a href="#/sweet-sixteen" data-route="/sweet-sixteen" data-en="Explore celebrations →" data-es="Descubre las celebraciones →">Explore celebrations →</a>
      </article>
     </div>
    </section>
    <section class="view page-wrap" data-view="/weddings" hidden="" aria-labelledby="weddings-title">
-    <div class="page-lead">
-     <span class="eyebrow" data-en="Your story, beautifully told" data-es="Tu historia, bellamente contada">Your story, beautifully told</span>
+    <div class="page-lead"><span class="eyebrow" data-en="Your story, beautifully told" data-es="Tu historia, bellamente contada">Your story, beautifully told</span>
      <h1 id="weddings-title" data-template-id="weddings-title" class="canva-text" data-en="Weddings" data-es="Bodas" style="color: rgb(43, 26, 14);">Weddings</h1>
      <p class="intro" data-en="A day made of meaningful moments. Set the scene with sound, light, and a first dance that feels entirely yours." data-es="Un día lleno de momentos significativos. Crea el ambiente con sonido, luz y un primer baile que se sienta completamente tuyo.">A day made of meaningful moments. Set the scene with sound, light, and a first dance that feels entirely yours.</p>
+     <div class="actions"><a data-template-id="weddings-gallery-button" class="canva-button btn btn-primary" href="https://johngraceeventgroup.pixieset.com/weddings/" target="_blank" rel="noopener noreferrer" data-en="View more photos and videos" data-es="Ver más fotos y videos" style="background: rgb(230, 207, 184); color: rgb(43, 26, 14); font-weight: 700;">View more photos and videos</a>
+     </div>
     </div>
     <h2 class="section-title" data-en="The experience" data-es="La experiencia">The experience</h2>
     <p class="intro" data-en="Professional sound, atmospheric lighting, sparkle effects, and dancing on the clouds can help make every entrance and dance unforgettable." data-es="El sonido profesional, la iluminación, los efectos de destellos y el baile sobre las nubes pueden hacer inolvidables cada entrada y cada baile.">Professional sound, atmospheric lighting, sparkle effects, and dancing on the clouds can help make every entrance and dance unforgettable.</p>
    </section>
    <section class="view page-wrap" data-view="/sweet-sixteen" hidden="" aria-labelledby="sweet-title">
-    <div class="page-lead">
-     <span class="eyebrow" data-en="A beautiful new chapter" data-es="Un nuevo capítulo hermoso">A beautiful new chapter</span>
+    <div class="page-lead"><span class="eyebrow" data-en="A beautiful new chapter" data-es="Un nuevo capítulo hermoso">A beautiful new chapter</span>
      <h1 id="sweet-title" data-template-id="sweet-title" class="canva-text" data-en="Sweet Sixteen" data-es="Dulces Dieciséis" style="color: rgb(43, 26, 14);">Sweet Sixteen</h1>
      <p class="intro" data-en="Celebrate the person you are becoming with a night full of light, music, and moments to remember." data-es="Celebra la persona en la que te estás convirtiendo con una noche de luces, música y momentos para recordar.">Celebrate the person you are becoming with a night full of light, music, and moments to remember.</p>
+     <div class="actions"><a data-template-id="sweet-gallery-button" class="canva-button btn btn-primary" href="https://johngraceeventgroup.pixieset.com/sweet15s16s/" target="_blank" rel="noopener noreferrer" data-en="View more photos and videos" data-es="Ver más fotos y videos" style="background: rgb(230, 207, 184); color: rgb(43, 26, 14); font-weight: 700;">View more photos and videos</a>
+     </div>
     </div>
     <h2 class="section-title" data-en="The experience" data-es="La experiencia">The experience</h2>
     <p class="intro" data-en="Bring the dance floor to life with a robot show, professional sound, lighting, and sparkle effects." data-es="Da vida a la pista de baile con un show de robot, sonido profesional, iluminación y efectos de destellos.">Bring the dance floor to life with a robot show, professional sound, lighting, and sparkle effects.</p>
    </section>
    <section class="view page-wrap" data-view="/quinceaneras" hidden="" aria-labelledby="quince-title">
-    <div class="page-lead">
-     <span class="eyebrow" data-en="A milestone to treasure" data-es="Un momento para atesorar">A milestone to treasure</span>
+    <div class="page-lead"><span class="eyebrow" data-en="A milestone to treasure" data-es="Un momento para atesorar">A milestone to treasure</span>
      <h1 id="quince-title" data-template-id="quince-title" class="canva-text" data-en="Fifteen Years" data-es="Quinceañeras / 15 Años" style="color: rgb(43, 26, 14);">Fifteen Years</h1>
      <p class="intro" data-en="Honor a cherished tradition with a celebration as personal and radiant as the story behind it." data-es="Honra una tradición entrañable con una celebración tan personal y radiante como la historia que la inspira.">Honor a cherished tradition with a celebration as personal and radiant as the story behind it.</p>
+     <div class="actions"><a data-template-id="quince-gallery-button" class="canva-button btn btn-primary" href="https://johngraceeventgroup.pixieset.com/sweet15s16s/" target="_blank" rel="noopener noreferrer" data-en="View more photos and videos" data-es="Ver más fotos y videos" style="background: rgb(230, 207, 184); color: rgb(43, 26, 14); font-weight: 700;">View more photos and videos</a>
+     </div>
     </div>
     <h2 class="section-title" data-en="The experience" data-es="La experiencia">The experience</h2>
     <p class="intro" data-en="Create a memorable entrance and dance with professional sound, expressive lighting, sparkle effects, and dancing on the clouds." data-es="Crea una entrada y un baile memorables con sonido profesional, iluminación, efectos de destellos y baile sobre las nubes.">Create a memorable entrance and dance with professional sound, expressive lighting, sparkle effects, and dancing on the clouds.</p>
    </section>
    <section class="view page-wrap" data-view="/robot-show" hidden="" aria-labelledby="robot-title">
-    <div class="page-lead">
-     <span class="eyebrow" data-en="A moment of wonder" data-es="Un momento de asombro">A moment of wonder</span>
+    <div class="page-lead"><span class="eyebrow" data-en="A moment of wonder" data-es="Un momento de asombro">A moment of wonder</span>
      <h1 id="robot-title" data-template-id="robot-title" class="canva-text" data-en="Robot Show" data-es="Show de Robot" style="color: rgb(43, 26, 14);">Robot Show</h1>
      <p class="intro" data-en="Invite a burst of energy onto the dance floor and give your guests a moment to remember." data-es="Invita una explosión de energía a la pista de baile y regala a tus invitados un momento para recordar.">Invite a burst of energy onto the dance floor and give your guests a moment to remember.</p>
     </div>
@@ -216,8 +226,7 @@
     </div>
    </section>
    <section class="view page-wrap" data-view="/sound-system" hidden="" aria-labelledby="sound-title">
-    <div class="page-lead">
-     <span class="eyebrow" data-en="Every moment deserves to be heard" data-es="Cada momento merece escucharse">Every moment deserves to be heard</span>
+    <div class="page-lead"><span class="eyebrow" data-en="Every moment deserves to be heard" data-es="Cada momento merece escucharse">Every moment deserves to be heard</span>
      <h1 id="sound-title" data-template-id="sound-title" class="canva-text" data-en="Professional Sound System" data-es="Sistema de Sonido Profesional" style="color: rgb(43, 26, 14);">Professional Sound System</h1>
      <p class="intro" data-en="From meaningful words to the music that fills the dance floor, sound helps carry your celebration." data-es="Desde las palabras más especiales hasta la música que llena la pista, el sonido acompaña tu celebración.">From meaningful words to the music that fills the dance floor, sound helps carry your celebration.</p>
     </div>
@@ -226,8 +235,7 @@
     </div>
    </section>
    <section class="view page-wrap" data-view="/lighting" hidden="" aria-labelledby="lighting-title">
-    <div class="page-lead">
-     <span class="eyebrow" data-en="A beautiful glow" data-es="Un brillo especial">A beautiful glow</span>
+    <div class="page-lead"><span class="eyebrow" data-en="A beautiful glow" data-es="Un brillo especial">A beautiful glow</span>
      <h1 id="lighting-title" data-template-id="lighting-title" class="canva-text" data-en="Lighting with Sparkle Effects" data-es="Iluminación con Efectos de Destellos" style="color: rgb(43, 26, 14);">Lighting with Sparkle Effects</h1>
      <p class="intro" data-en="Shape the atmosphere with light and add a touch of sparkle to the moments that matter most." data-es="Crea el ambiente con luz y añade un toque de destellos a los momentos más importantes.">Shape the atmosphere with light and add a touch of sparkle to the moments that matter most.</p>
     </div>
@@ -236,8 +244,7 @@
     </div>
    </section>
    <section class="view page-wrap" data-view="/dancing-on-the-clouds" hidden="" aria-labelledby="clouds-title">
-    <div class="page-lead">
-     <span class="eyebrow" data-en="A dreamlike dance" data-es="Un baile de ensueño">A dreamlike dance</span>
+    <div class="page-lead"><span class="eyebrow" data-en="A dreamlike dance" data-es="Un baile de ensueño">A dreamlike dance</span>
      <h1 id="clouds-title" data-template-id="clouds-title" class="canva-text" data-en="Dancing on the Clouds" data-es="Baile sobre las Nubes" style="color: rgb(43, 26, 14);">Dancing on the Clouds</h1>
      <p class="intro" data-en="Give a special dance an enchanting atmosphere and a memory you will want to revisit." data-es="Dale a un baile especial una atmósfera encantadora y un recuerdo al que querrás volver.">Give a special dance an enchanting atmosphere and a memory you will want to revisit.</p>
     </div>
@@ -246,8 +253,7 @@
     </div>
    </section>
    <section class="view page-wrap" data-view="/contact" hidden="" aria-labelledby="contact-title">
-    <div class="page-lead">
-     <span class="eyebrow" data-en="Let's begin" data-es="Comencemos">Let's begin</span>
+    <div class="page-lead"><span class="eyebrow" data-en="Let's begin" data-es="Comencemos">Let's begin</span>
      <h1 id="contact-title" data-template-id="contact-title" class="canva-text" data-en="Tell us your story." data-es="Cuéntanos tu historia." style="color: rgb(43, 26, 14);">Tell us your story.</h1>
      <p class="intro" data-en="Share what you are imagining for your celebration. Sending becomes available when a genuine form endpoint is connected." data-es="Comparte lo que imaginas para tu celebración. El envío estará disponible cuando se conecte un endpoint real.">Share what you are imagining for your celebration. Sending becomes available when a genuine form endpoint is connected.</p>
     </div>
@@ -259,65 +265,94 @@
       </div>
      </div>
      <form id="inquiry-form" class="contact-form" novalidate="">
-      <div class="field">
-       <label for="name" data-en="Name" data-es="Nombre">Name</label><input id="name" name="name" autocomplete="name" required="">
+      <div class="field"><label for="name" data-en="Name" data-es="Nombre">Name</label><input id="name" name="name" autocomplete="name" required="">
       </div>
-      <div class="field">
-       <label for="email" data-en="Email" data-es="Correo electrónico">Email</label><input id="email" name="email" type="email" autocomplete="email" required="">
+      <div class="field"><label for="email" data-en="Email" data-es="Correo electrónico">Email</label><input id="email" name="email" type="email" autocomplete="email" required="">
       </div>
-      <div class="field">
-       <label for="event-type" data-en="Event type" data-es="Tipo de evento">Event type</label><select id="event-type" name="event_type" required=""><option value="" data-en="Select an event" data-es="Selecciona un evento">Select an event</option><option value="wedding" data-en="Wedding" data-es="Boda">Wedding</option><option value="sweet-sixteen" data-en="Sweet Sixteen" data-es="Dulces Dieciséis">Sweet Sixteen</option><option value="quinceanera" data-en="Quinceañera / 15 Años" data-es="Quinceañera / 15 Años">Quinceañera / 15 Años</option><option value="other" data-en="Other celebration" data-es="Otra celebración">Other celebration</option></select>
+      <div class="field"><label for="event-type" data-en="Event type" data-es="Tipo de evento">Event type</label><select id="event-type" name="event_type" required=""><option value="" data-en="Select an event" data-es="Selecciona un evento">Select an event</option><option value="wedding" data-en="Wedding" data-es="Boda">Wedding</option><option value="sweet-sixteen" data-en="Sweet Sixteen" data-es="Dulces Dieciséis">Sweet Sixteen</option><option value="quinceanera" data-en="Quinceañera / 15 Años" data-es="Quinceañera / 15 Años">Quinceañera / 15 Años</option><option value="other" data-en="Other celebration" data-es="Otra celebración">Other celebration</option></select>
       </div>
-      <div class="field">
-       <label for="event-date" data-en="Event date" data-es="Fecha del evento">Event date</label><input id="event-date" name="event_date" type="date" required="">
+      <div class="field"><label for="event-date" data-en="Event date" data-es="Fecha del evento">Event date</label><input id="event-date" name="event_date" type="date" required="">
       </div>
-      <div class="field">
-       <label for="message" data-en="Message" data-es="Mensaje">Message</label><textarea id="message" name="message" required=""></textarea>
-      </div><button id="send-button" class="btn btn-primary" type="submit" disabled="" data-en="Send inquiry" data-es="Enviar consulta">Send inquiry</button>
+      <div class="field"><label for="message" data-en="Message" data-es="Mensaje">Message</label><textarea id="message" name="message" required=""></textarea>
+      </div><button class="btn btn-primary" type="submit" disabled="" data-en="Send inquiry" data-es="Enviar consulta">Send inquiry</button>
       <p id="form-status" class="notice" role="status"></p>
      </form>
     </div>
-   </section><!-- Shared non-Home view content: every virtual route retains its own lead above
-       and displays related services, reserved gallery spaces, and contact access. -->
+   </section>
    <section id="route-extras" class="home-section home-gallery" hidden="" aria-labelledby="related-title">
     <div class="section-inner">
-     <h2 id="related-title" class="section-title" data-en="Related experiences" data-es="Experiencias relacionadas" hidden="">Related experiences</h2>
-     <nav class="related-links" aria-label="Related services" hidden=""><a href="/services" data-route="/services" data-en="All services" data-es="Todos los servicios">All services</a> <a href="/robot-show" data-route="/robot-show" data-en="Robot Show" data-es="Show de Robot">Robot Show</a> <a href="/sound-system" data-route="/sound-system" data-en="Professional Sound System" data-es="Sistema de Sonido Profesional">Professional Sound System</a> <a href="/lighting" data-route="/lighting" data-en="Lighting with Sparkle Effects" data-es="Iluminación con Efectos de Destellos">Lighting with Sparkle Effects</a> <a href="/dancing-on-the-clouds" data-route="/dancing-on-the-clouds" data-en="Dancing on the Clouds" data-es="Baile sobre las Nubes">Dancing on the Clouds</a>
+     <h2 id="related-title" class="section-title" data-en="Related experiences" data-es="Experiencias relacionadas">Related experiences</h2>
+     <nav class="related-links" aria-label="Related services"><a href="#/services" data-route="/services" data-en="All services" data-es="Todos los servicios">All services</a><a href="#/robot-show" data-route="/robot-show" data-en="Robot Show" data-es="Show de Robot">Robot Show</a><a href="#/sound-system" data-route="/sound-system" data-en="Professional Sound System" data-es="Sistema de Sonido Profesional">Professional Sound System</a><a href="#/lighting" data-route="/lighting" data-en="Lighting with Sparkle Effects" data-es="Iluminación con Efectos de Destellos">Lighting with Sparkle Effects</a><a href="#/dancing-on-the-clouds" data-route="/dancing-on-the-clouds" data-en="Dancing on the Clouds" data-es="Baile sobre las Nubes">Dancing on the Clouds</a>
      </nav>
-     <div id="route-gallery" class="gallery" aria-label="Photo placeholders">
-      <figure class="gallery-slot wedding-photo-card" data-wedding-gallery="true" data-reference="https://imgur.com/aBO9Beh"><img data-template-id="wedding-photo-1" class="canva-image wedding-photo" loading="lazy" decoding="async" src="https://i.imgur.com/aBO9Beh.jpg" alt="Wedding photograph 1 / Fotografía de boda 1">
-       <figcaption class="slot-label" data-en="Wedding photograph 1" data-es="Fotografía de boda 1">
-        Wedding photograph 1
-       </figcaption>
+     <div class="gallery" aria-label="Photographs">
+      <figure class="gallery-slot" data-gallery-route="/weddings"><img data-template-id="wedding-photo-1" class="canva-image" loading="lazy" src="https://i.imgur.com/aBO9Beh.jpg" alt="Wedding photograph 1 / Fotografía de boda 1">
       </figure>
-      <figure class="gallery-slot wedding-photo-card" data-wedding-gallery="true" data-reference="https://imgur.com/wHAvBQr"><img data-template-id="wedding-photo-2" class="canva-image wedding-photo" loading="lazy" decoding="async" src="https://i.imgur.com/wHAvBQr.jpg" alt="Wedding photograph 2 / Fotografía de boda 2">
-       <figcaption class="slot-label" data-en="Wedding photograph 2" data-es="Fotografía de boda 2">
-        Wedding photograph 2
-       </figcaption>
+      <figure class="gallery-slot" data-gallery-route="/weddings"><img data-template-id="wedding-photo-2" class="canva-image" loading="lazy" src="https://i.imgur.com/wHAvBQr.jpg" alt="Wedding photograph 2 / Fotografía de boda 2">
       </figure>
-      <figure class="gallery-slot wedding-photo-card" data-wedding-gallery="true" data-reference="https://imgur.com/hXgLLzn"><img data-template-id="wedding-photo-3" class="canva-image wedding-photo" loading="lazy" decoding="async" src="https://i.imgur.com/hXgLLzn.jpg" alt="Wedding photograph 3 / Fotografía de boda 3">
-       <figcaption class="slot-label" data-en="Wedding photograph 3" data-es="Fotografía de boda 3">
-        Wedding photograph 3
-       </figcaption>
+      <figure class="gallery-slot" data-gallery-route="/weddings"><img data-template-id="wedding-photo-3" class="canva-image" loading="lazy" src="https://i.imgur.com/hXgLLzn.jpg" alt="Wedding photograph 3 / Fotografía de boda 3">
       </figure>
-      <figure class="gallery-slot wedding-photo-card" data-wedding-gallery="true" data-reference="https://imgur.com/btcdMTQ"><img data-template-id="wedding-photo-4" class="canva-image wedding-photo" loading="lazy" decoding="async" src="https://i.imgur.com/btcdMTQ.jpg" alt="Wedding photograph 4 / Fotografía de boda 4">
-       <figcaption class="slot-label" data-en="Wedding photograph 4" data-es="Fotografía de boda 4">
-        Wedding photograph 4
-       </figcaption>
+      <figure class="gallery-slot" data-gallery-route="/weddings"><img data-template-id="wedding-photo-4" class="canva-image" loading="lazy" src="https://i.imgur.com/btcdMTQ.jpg" alt="Wedding photograph 4 / Fotografía de boda 4">
       </figure>
-      <figure class="gallery-slot wedding-photo-card" data-wedding-gallery="true" data-reference="https://imgur.com/df1Wd9T"><img data-template-id="wedding-photo-5" class="canva-image wedding-photo" loading="lazy" decoding="async" src="https://i.imgur.com/df1Wd9T.jpg" alt="Wedding photograph 5 / Fotografía de boda 5">
-       <figcaption class="slot-label" data-en="Wedding photograph 5" data-es="Fotografía de boda 5">
-        Wedding photograph 5
-       </figcaption>
+      <figure class="gallery-slot" data-gallery-route="/weddings"><img data-template-id="wedding-photo-5" class="canva-image" loading="lazy" src="https://i.imgur.com/df1Wd9T.jpg" alt="Wedding photograph 5 / Fotografía de boda 5">
       </figure>
-      <figure class="gallery-slot wedding-photo-card" data-wedding-gallery="true" data-reference="https://imgur.com/hnRmPt9"><img data-template-id="wedding-photo-6" class="canva-image wedding-photo" loading="lazy" decoding="async" src="https://i.imgur.com/hnRmPt9.jpg" alt="Wedding photograph 6 / Fotografía de boda 6">
-       <figcaption class="slot-label" data-en="Wedding photograph 6" data-es="Fotografía de boda 6">
-        Wedding photograph 6
-       </figcaption>
+      <figure class="gallery-slot" data-gallery-route="/weddings"><img data-template-id="wedding-photo-6" class="canva-image" loading="lazy" src="https://i.imgur.com/hnRmPt9.jpg" alt="Wedding photograph 6 / Fotografía de boda 6">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/sweet-sixteen"><img data-template-id="sweet-photo-1" class="canva-image" loading="lazy" src="https://i.imgur.com/NzvxuQt.jpg" alt="Sweet Sixteen photograph 1">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/sweet-sixteen"><img data-template-id="sweet-photo-2" class="canva-image" loading="lazy" src="https://i.imgur.com/X58p1jm.jpg" alt="Sweet Sixteen photograph 2">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/sweet-sixteen"><img data-template-id="sweet-photo-3" class="canva-image" loading="lazy" src="https://i.imgur.com/e8ewLuc.jpg" alt="Sweet Sixteen photograph 3">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/sweet-sixteen"><img data-template-id="sweet-photo-4" class="canva-image" loading="lazy" src="https://i.imgur.com/AGuPDSV.jpg" alt="Sweet Sixteen photograph 4">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/sweet-sixteen"><img data-template-id="sweet-photo-5" class="canva-image" loading="lazy" src="https://i.imgur.com/iDBNN2H.jpg" alt="Sweet Sixteen photograph 5">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/sweet-sixteen"><img data-template-id="sweet-photo-6" class="canva-image" loading="lazy" src="https://i.imgur.com/l9BtMUS.jpg" alt="Sweet Sixteen photograph 6">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/quinceaneras"><img data-template-id="quince-photo-1" class="canva-image" loading="lazy" src="https://i.imgur.com/crv6U8F.jpg" alt="Quinceañera photograph 1">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/quinceaneras"><img data-template-id="quince-photo-2" class="canva-image" loading="lazy" src="https://i.imgur.com/wxdvc3L.jpg" alt="Quinceañera photograph 2">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/quinceaneras"><img data-template-id="quince-photo-3" class="canva-image" loading="lazy" src="https://i.imgur.com/RThfhQS.jpg" alt="Quinceañera photograph 3">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/quinceaneras"><img data-template-id="quince-photo-4" class="canva-image" loading="lazy" src="https://i.imgur.com/IT5XpAY.jpg" alt="Quinceañera photograph 4">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/quinceaneras"><img data-template-id="quince-photo-5" class="canva-image" loading="lazy" src="https://i.imgur.com/eqcpC5Q.jpg" alt="Quinceañera photograph 5">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/quinceaneras"><img data-template-id="quince-photo-6" class="canva-image" loading="lazy" src="https://i.imgur.com/PkqDfZj.jpg" alt="Quinceañera photograph 6">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/robot-show"><img data-template-id="robot-photo-1" class="canva-image" loading="lazy" src="https://i.imgur.com/883fzR1.jpg" alt="Robot Show photograph 1">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/robot-show"><img data-template-id="robot-photo-2" class="canva-image" loading="lazy" src="https://i.imgur.com/RfXdw81.jpg" alt="Robot Show photograph 2">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/robot-show"><img data-template-id="robot-photo-3" class="canva-image" loading="lazy" src="https://i.imgur.com/hT60KqG.jpg" alt="Robot Show photograph 3">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/robot-show"><img data-template-id="robot-photo-4" class="canva-image" loading="lazy" src="https://i.imgur.com/86fSjKS.jpg" alt="Robot Show photograph 4">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/robot-show"><img data-template-id="robot-photo-5" class="canva-image" loading="lazy" src="https://i.imgur.com/lfUbQ9G.jpg" alt="Robot Show photograph 5">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/robot-show"><img data-template-id="robot-photo-6" class="canva-image" loading="lazy" src="https://i.imgur.com/I1p3RDa.jpg" alt="Robot Show photograph 6">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/sound-system"><img data-template-id="sound-photo-1" class="canva-image" loading="lazy" src="https://i.imgur.com/l2s9bHT.jpg" alt="Professional sound system photograph 1">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/sound-system"><img data-template-id="sound-photo-2" class="canva-image" loading="lazy" src="https://i.imgur.com/Tq6qRNS.jpg" alt="Professional sound system photograph 2">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/sound-system"><img data-template-id="sound-photo-3" class="canva-image" loading="lazy" src="https://i.imgur.com/Uj79BPp.jpg" alt="Professional sound system photograph 3">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/lighting"><img data-template-id="lighting-photo-1" class="canva-image" loading="lazy" src="https://i.imgur.com/My8w4SM.jpg" alt="Lighting photograph 1">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/lighting"><img data-template-id="lighting-photo-2" class="canva-image" loading="lazy" src="https://i.imgur.com/EOCRIdX.jpg" alt="Lighting photograph 2">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/lighting"><img data-template-id="lighting-photo-3" class="canva-image" loading="lazy" src="https://i.imgur.com/AfvTSrg.jpg" alt="Lighting photograph 3">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/dancing-on-the-clouds"><img data-template-id="clouds-photo-1" class="canva-image" loading="lazy" src="https://i.imgur.com/DxTUuOi.jpg" alt="Dancing on the Clouds photograph 1">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/dancing-on-the-clouds"><img data-template-id="clouds-photo-2" class="canva-image" loading="lazy" src="https://i.imgur.com/18eCs2V.jpg" alt="Dancing on the Clouds photograph 2">
+      </figure>
+      <figure class="gallery-slot" data-gallery-route="/dancing-on-the-clouds"><img data-template-id="clouds-photo-3" class="canva-image" loading="lazy" src="https://i.imgur.com/0n1Ju6y.jpg" alt="Dancing on the Clouds photograph 3">
       </figure>
      </div>
-     <div class="actions">
-      <a class="btn btn-primary" href="/contact" data-route="/contact" data-en="Contact us" data-es="Contáctanos">Contact us</a>
+     <div class="actions"><a class="btn btn-primary" href="#/contact" data-route="/contact" data-en="Contact us" data-es="Contáctanos">Contact us</a>
      </div>
     </div>
    </section>
@@ -330,303 +365,40 @@
     </div>
     <div>
      <h3 class="footer-label" data-en="Explore" data-es="Explorar">Explore</h3>
-     <nav class="footer-links" aria-label="Footer navigation"><a href="/" data-route="/" data-en="Home" data-es="Inicio">Home</a> <a href="/weddings" data-route="/weddings" data-en="Weddings" data-es="Bodas">Weddings</a> <a href="/sweet-sixteen" data-route="/sweet-sixteen" data-en="Sweet Sixteen" data-es="Dulces Dieciséis">Sweet Sixteen</a> <a href="/quinceaneras" data-route="/quinceaneras" data-en="Fifteen Years" data-es="Fifteen Years">Fifteen Years</a> <a href="/services" data-route="/services" data-en="Services" data-es="Servicios">Services</a>
+     <nav class="footer-links" aria-label="Footer navigation"><a href="#/" data-route="/" data-en="Home" data-es="Inicio">Home</a><a href="#/weddings" data-route="/weddings" data-en="Weddings" data-es="Bodas">Weddings</a><a href="#/sweet-sixteen" data-route="/sweet-sixteen" data-en="Sweet Sixteen" data-es="Dulces Dieciséis">Sweet Sixteen</a><a href="#/quinceaneras" data-route="/quinceaneras" data-en="Fifteen Years" data-es="Fifteen Years">Fifteen Years</a><a href="#/services" data-route="/services" data-en="Services" data-es="Servicios">Services</a>
      </nav>
     </div>
     <div>
      <h3 class="footer-label" data-en="Connect" data-es="Conectar">Connect</h3>
-     <div class="footer-links">
-      <a href="/contact" data-route="/contact" data-en="Contact us" data-es="Contáctanos">Contact us</a><button id="footer-whatsapp" class="btn" type="button">WhatsApp</button>
-      <div class="language footer-language" aria-label="Language / Idioma">
-       <button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="es" aria-pressed="false">ES</button>
+     <div class="footer-links"><a href="#/contact" data-route="/contact" data-en="Contact us" data-es="Contáctanos">Contact us</a><a href="https://wa.me/12017027509" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <div class="language footer-language" aria-label="Language / Idioma"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="es" aria-pressed="false">ES</button>
       </div>
      </div>
     </div>
    </div>
-   <div class="footer-bottom">
-    <span data-en="Made for moments worth remembering." data-es="Para momentos que vale la pena recordar.">Made for moments worth remembering.</span>
+   <div class="footer-bottom"><span data-en="Made for moments worth remembering." data-es="Para momentos que vale la pena recordar.">Made for moments worth remembering.</span>
    </div>
-  </footer><a id="whatsapp-button" class="whatsapp" href="https://wa.me/12017027509?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20entretenimiento." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  </footer><a class="whatsapp" href="https://wa.me/12017027509?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20entretenimiento." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.56 0 .25 5.31.25 11.83c0 2.08.54 4.11 1.57 5.9L.15 24l6.42-1.64a11.82 11.82 0 0 0 5.51 1.36h.01c6.51 0 11.81-5.31 11.81-11.83 0-3.16-1.23-6.13-3.38-8.41ZM12.09 21.7h-.01a9.83 9.83 0 0 1-5.01-1.37l-.36-.21-3.81.97 1.02-3.72-.23-.38a9.83 9.83 0 1 1 8.4 4.71Zm5.4-7.37c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.5-1.78-1.68-2.08-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.52.07-.8.37-.28.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"></path>
    </svg></a>
-  <div id="whatsapp-note" class="whatsapp-note" role="status" hidden=""></div>
   <script>
-  // Las rutas virtuales muestran vistas de ESTE documento. No solicitan archivos
-  // HTML inexistentes; así se evita la pantalla blanca en la vista de código actual.
-  // Para publicar páginas HTML físicas separadas en GitHub Pages, habrá que
-  // exportar o crear esos archivos con el mismo contenido y las rutas correspondientes.
-  const ROUTES = new Set([
-    "/", "/services", "/weddings", "/sweet-sixteen", "/quinceaneras",
-    "/robot-show", "/sound-system", "/lighting", "/dancing-on-the-clouds", "/contact"
-  ]);
-  // Direct wedding image URLs; replace later with assets/weddings-01.jpg through assets/weddings-06.jpg if needed.
-  const GALLERY_IMAGES = Object.freeze({
-    weddings: Object.freeze([
-      "https://i.imgur.com/aBO9Beh.jpg", "https://i.imgur.com/wHAvBQr.jpg", "https://i.imgur.com/hXgLLzn.jpg",
-      "https://i.imgur.com/btcdMTQ.jpg", "https://i.imgur.com/df1Wd9T.jpg", "https://i.imgur.com/hnRmPt9.jpg"
-    ]),
-    "sweet-sixteen": Object.freeze([
-      "https://i.imgur.com/NzvxuQt.jpg", "https://i.imgur.com/X58p1jm.jpg", "https://i.imgur.com/e8ewLuc.jpg",
-      "https://i.imgur.com/AGuPDSV.jpg", "https://i.imgur.com/iDBNN2H.jpg", "https://i.imgur.com/l9BtMUS.jpg"
-    ]),
-    // Fifteen Years: replace these direct URLs with local GitHub Pages files later.
-    quinceaneras: Object.freeze([
-      "https://i.imgur.com/crv6U8F.jpg", "https://i.imgur.com/wxdvc3L.jpg", "https://i.imgur.com/RThfhQS.jpg",
-      "https://i.imgur.com/IT5XpAY.jpg", "https://i.imgur.com/eqcpC5Q.jpg", "https://i.imgur.com/PkqDfZj.jpg"
-    ]),
-    // Robot Show: replace these direct URLs with local GitHub Pages files later.
-    "robot-show": Object.freeze([
-      "https://i.imgur.com/883fzR1.jpg", "https://i.imgur.com/RfXdw81.jpg", "https://i.imgur.com/hT60KqG.jpg",
-      "https://i.imgur.com/86fSjKS.jpg", "https://i.imgur.com/lfUbQ9G.jpg", "https://i.imgur.com/I1p3RDa.jpg"
-    ]),
-    "sound-system": Object.freeze([
-      "https://i.imgur.com/l2s9bHT.jpg", "https://i.imgur.com/Tq6qRNS.jpg", "https://i.imgur.com/Uj79BPp.jpg"
-    ]),
-    lighting: Object.freeze([
-      "https://i.imgur.com/My8w4SM.jpg", "https://i.imgur.com/EOCRIdX.jpg", "https://i.imgur.com/AfvTSrg.jpg"
-    ]),
-    "dancing-on-the-clouds": Object.freeze([
-      "https://i.imgur.com/DxTUuOi.jpg", "https://i.imgur.com/18eCs2V.jpg", "https://i.imgur.com/0n1Ju6y.jpg"
-    ])
-  });
-  const WHATSAPP_NUMBER = "12017027509";
-  const FORM_ENDPOINT = "";
-  let route = "/";
-  let language = "en";
-  try { language = localStorage.getItem("portal-language") === "es" ? "es" : "en"; } catch (_) {}
-
-  const menu = document.getElementById("main-nav");
-  const menuToggle = document.getElementById("menu-toggle");
-  const dropdowns = [...document.querySelectorAll(".dropdown")];
-  const routeGallery = document.getElementById("route-gallery");
-  const heroVideo = document.querySelector(".hero video");
-  if (heroVideo) heroVideo.addEventListener("error", () => heroVideo.classList.add("video-fallback"), { once: true });
-
-  function normalizedRoute(path) {
-    const raw = String(path || "/");
-    const hashRoute = raw.startsWith("#") ? raw.slice(1) : raw;
-    const clean = (hashRoute || "/").replace(/^\/+/, "").replace(/\/+$/, "");
-    const routePath = clean ? `/${clean}` : "/";
-    return ROUTES.has(routePath) ? routePath : "/";
-  }
-
-  function routeFromHash() {
-    return normalizedRoute(window.location.hash || "/");
-  }
-
-  function closeDropdowns(except) {
-    dropdowns.forEach(item => {
-      if (item === except) return;
-      item.classList.remove("open");
-      item.querySelector(".dropdown-trigger").setAttribute("aria-expanded", "false");
-    });
-  }
-
-  function updateMenuLabel() {
-    menuToggle.setAttribute("aria-label", language === "es"
-      ? (menu.classList.contains("open") ? "Cerrar menú" : "Abrir menú")
-      : (menu.classList.contains("open") ? "Close menu" : "Open menu"));
-  }
-
-  function closeMenu() {
-    menu.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-    closeDropdowns();
-    updateMenuLabel();
-  }
-
-  // Wedding gallery owns exactly six static cards and never shares another gallery's list.
-  function makeGallerySlots(gallery, name) {
-    const weddingsPhotos = [...gallery.querySelectorAll('[data-wedding-gallery]')].slice(0, 6);
-    if (name === "weddings") {
-      gallery.querySelectorAll('[data-wedding-gallery]').forEach((card, index) => {
-        card.hidden = index >= weddingsPhotos.length;
-      });
-      weddingsPhotos.forEach(card => {
-        card.hidden = false;
-        const image = card.querySelector("img");
-        image.addEventListener("error", () => card.classList.add("photo-fallback"), { once: true });
-      });
-      gallery.querySelectorAll('[data-generated-gallery]').forEach(slot => slot.remove());
-      return;
-    }
-    gallery.querySelectorAll('[data-wedding-gallery]').forEach(card => card.hidden = true);
-    gallery.querySelectorAll('[data-generated-gallery]').forEach(slot => slot.remove());
-    const routePhotos = GALLERY_IMAGES[name] || null;
-    if (!routePhotos || !routePhotos.length) return;
-    const sweetSixteenPhotos = name === "sweet-sixteen" ? routePhotos : null;
-    const quinceaneraPhotos = name === "quinceaneras" ? routePhotos : null;
-    const robotShowPhotos = name === "robot-show" ? routePhotos : null;
-    const soundSystemPhotos = name === "sound-system" ? routePhotos.slice(0, 3) : null;
-    const lightingPhotos = name === "lighting" ? routePhotos.slice(0, 3) : null;
-    const dancingOnCloudsPhotos = name === "dancing-on-the-clouds" ? routePhotos.slice(0, 3) : null;
-    const photoSet = sweetSixteenPhotos || quinceaneraPhotos || robotShowPhotos || soundSystemPhotos || lightingPhotos || dancingOnCloudsPhotos;
-    const cardCount = soundSystemPhotos || lightingPhotos || dancingOnCloudsPhotos ? 3 : 6;
-    for (let i = 1; i <= cardCount; i++) {
-      const slot = document.createElement(photoSet ? "figure" : "div");
-      slot.dataset.generatedGallery = "true";
-      slot.className = sweetSixteenPhotos ? "gallery-slot wedding-photo-card sweet-sixteen-photo-card" : quinceaneraPhotos ? "gallery-slot wedding-photo-card quinceanera-photo-card" : robotShowPhotos ? "gallery-slot wedding-photo-card robot-show-photo-card" : soundSystemPhotos ? "gallery-slot wedding-photo-card sound-system-photo-card" : lightingPhotos ? "gallery-slot wedding-photo-card lighting-photo-card" : dancingOnCloudsPhotos ? "gallery-slot wedding-photo-card dancing-on-clouds-photo-card" : "gallery-slot";
-      slot.dataset.filename = photoSet ? photoSet[i - 1] : `assets/${name}-${String(i).padStart(2, "0")}.jpg`;
-      if (photoSet) {
-        const image = document.createElement("img");
-        image.src = photoSet[i - 1];
-        image.alt = quinceaneraPhotos ? `Quinceañera photo ${i} / Foto de 15 años ${i}` : robotShowPhotos ? `Robot show photo ${i} / Foto de show de robots ${i}` : soundSystemPhotos ? `Sound system photo ${i} / Foto de sonido ${i}` : lightingPhotos ? `Lighting photo ${i} / Foto de iluminación ${i}` : dancingOnCloudsPhotos ? `Dancing on the Clouds photo ${i} / Foto de Baile sobre las Nubes ${i}` : `Sweet Sixteen photo ${i} / Foto de Sweet Sixteen ${i}`;
-        image.className = "wedding-photo";
-        image.style.display = "block";
-        image.style.width = "100%";
-        image.style.height = "100%";
-        image.style.objectFit = "cover";
-        image.loading = "lazy";
-        image.decoding = "async";
-        image.addEventListener("error", () => {
-          slot.classList.add("photo-fallback");
-          image.hidden = true;
-        }, { once: true });
-        slot.appendChild(image);
-      }
-      gallery.appendChild(slot);
-    }
-  }
-
-  function applyLanguage() {
-    document.documentElement.lang = language;
-    document.querySelectorAll("[data-en][data-es]").forEach(element => {
-      element.textContent = element.dataset[language];
-    });
-    document.querySelectorAll("[data-lang]").forEach(button => {
-      button.setAttribute("aria-pressed", String(button.dataset.lang === language));
-    });
-    document.querySelectorAll(".gallery-slot").forEach(slot => {
-      const description = language === "es"
-        ? `Espacio reservado para la fotografía ${slot.dataset.filename}.`
-        : `Reserved space for photograph ${slot.dataset.filename}.`;
-      slot.setAttribute("aria-label", description);
-    });
-    document.getElementById("whatsapp-note").textContent = language === "es"
-      ? "Añade el número verificado de WhatsApp para activar este botón."
-      : "Add the verified WhatsApp number to activate this button.";
-    document.getElementById("form-status").textContent = statusMessages[statusKey][language];
-    updateMenuLabel();
-    const title = document.querySelector(`.view[data-view="${route}"] h1`);
-    document.title = (title ? title.dataset[language] + " | " : "") + "Portal de Bodas Events";
-  }
-
-  // Único punto de entrada para navegación, historial, menú móvil y vistas.
-  function navigateTo(nextRoute, push = true) {
-    route = normalizedRoute(nextRoute);
-    if (push && routeFromHash() !== route) {
-      window.location.hash = route === "/" ? "" : route.slice(1);
-    }
-    document.querySelectorAll(".view").forEach(view => {
-      view.hidden = view.dataset.view !== route;
-    });
-    const routeExtras = document.getElementById("route-extras");
-    if (routeExtras) routeExtras.hidden = route === "/";
-    document.querySelectorAll("[data-route]").forEach(link => {
-      if (link.dataset.route === route) link.setAttribute("aria-current", "page");
-      else link.removeAttribute("aria-current");
-    });
-    if (route !== "/" && routeGallery) makeGallerySlots(routeGallery, route.slice(1));
-    closeMenu();
-    applyLanguage();
-    window.scrollTo(0, 0);
-  }
-
-  document.addEventListener("click", event => {
-    const link = event.target.closest("[data-route]");
-    if (link) {
-      event.preventDefault();
-      navigateTo(link.dataset.route);
-      return;
-    }
-    if (!event.target.closest(".dropdown")) closeDropdowns();
-    if (!event.target.closest(".site-header")) closeMenu();
-  });
-
-  window.addEventListener("hashchange", () => navigateTo(routeFromHash(), false));
-  window.addEventListener("popstate", () => navigateTo(routeFromHash(), false));
-
-  menuToggle.addEventListener("click", () => {
-    const open = menu.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(open));
-    if (!open) closeDropdowns();
-    updateMenuLabel();
-  });
-  dropdowns.forEach(item => {
-    const trigger = item.querySelector(".dropdown-trigger");
-    trigger.addEventListener("click", () => {
-      const open = !item.classList.contains("open");
-      closeDropdowns(item);
-      item.classList.toggle("open", open);
-      trigger.setAttribute("aria-expanded", String(open));
-    });
-  });
-  document.addEventListener("keydown", event => {
-    if (event.key === "Escape") {
-      const focusWasInHeader = document.activeElement.closest(".site-header");
-      closeMenu();
-      if (focusWasInHeader) menuToggle.focus();
-    }
-  });
-  document.querySelectorAll("[data-lang]").forEach(button => {
-    button.addEventListener("click", () => {
-      language = button.dataset.lang;
-      try { localStorage.setItem("portal-language", language); } catch (_) {}
-      // El idioma cambia el texto, nunca la ruta virtual actual.
-      applyLanguage();
-    });
-  });
-
-  const form = document.getElementById("inquiry-form");
-  const sendButton = document.getElementById("send-button");
-  const endpointReady = /^https:\/\//i.test(FORM_ENDPOINT);
-  sendButton.disabled = !endpointReady;
-  let statusKey = endpointReady ? "ready" : "unavailable";
-  const statusMessages = {
-    unavailable: { en: "Sending is unavailable until a real form endpoint is connected. No information is submitted yet.", es: "El envío no estará disponible hasta conectar un endpoint real. Por ahora no se envía ninguna información." },
-    ready: { en: "Your inquiry will be sent when you submit this form.", es: "Tu consulta se enviará al enviar este formulario." },
-    sending: { en: "Sending inquiry…", es: "Enviando consulta…" },
-    success: { en: "Your inquiry has been sent.", es: "Tu consulta se ha enviado." },
-    error: { en: "The submission could not be confirmed. Please try again later.", es: "No se pudo confirmar el envío. Inténtalo de nuevo más tarde." }
-  };
-
-  function openWhatsApp() {
-    if (/^\d{7,15}$/.test(WHATSAPP_NUMBER)) {
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}`, "_blank", "noopener,noreferrer");
-    } else {
-      const note = document.getElementById("whatsapp-note");
-      note.hidden = !note.hidden;
-    }
-  }
-  document.getElementById("footer-whatsapp").addEventListener("click", openWhatsApp);
-
-  form.addEventListener("submit", async event => {
-    event.preventDefault();
-    if (!endpointReady || !form.reportValidity()) return;
-    sendButton.disabled = true;
-    statusKey = "sending";
-    applyLanguage();
-    try {
-      const response = await fetch(FORM_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(new FormData(form)))
-      });
-      if (!response.ok) throw new Error("Unconfirmed submission");
-      form.reset();
-      statusKey = "success";
-    } catch (_) {
-      statusKey = "error";
-    } finally {
-      sendButton.disabled = false;
-      applyLanguage();
-    }
-  });
-
-  document.querySelectorAll("[data-gallery]").forEach(gallery => makeGallerySlots(gallery, gallery.dataset.gallery));
-  // Al cargar o recargar, incluso una ruta desconocida muestra una vista válida.
-  navigateTo(routeFromHash(), false);
-  if (window.lucide) lucide.createIcons();
+  const routes=new Set(["/","/services","/weddings","/sweet-sixteen","/quinceaneras","/robot-show","/sound-system","/lighting","/dancing-on-the-clouds","/contact"]);
+  const menu=document.getElementById("main-nav"),toggle=document.getElementById("menu-toggle"),dropdowns=[...document.querySelectorAll(".dropdown")];
+  let language="en",route="/";
+  try{language=localStorage.getItem("portal-language")==="es"?"es":"en"}catch(_){}
+  function getRoute(){const path="/"+(location.hash.replace(/^#\/?/,"").replace(/\/+$/,""));return routes.has(path)?path:"/"}
+  function closeDropdowns(){dropdowns.forEach(d=>{d.classList.remove("open");d.querySelector("button").setAttribute("aria-expanded","false")})}
+  function closeMenu(){menu.classList.remove("open");toggle.setAttribute("aria-expanded","false");closeDropdowns();toggle.setAttribute("aria-label",language==="es"?"Abrir menú":"Open menu")}
+  function translate(){document.documentElement.lang=language;document.querySelectorAll("[data-en][data-es]").forEach(el=>{el.textContent=el.dataset[language]});document.querySelectorAll("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===language)));document.getElementById("form-status").textContent=language==="es"?"El envío no estará disponible hasta conectar un endpoint real. Por ahora no se envía ninguna información.":"Sending is unavailable until a real form endpoint is connected. No information is submitted yet.";toggle.setAttribute("aria-label",language==="es"?"Abrir menú":"Open menu");const title=document.querySelector(`.view[data-view="${route}"] h1`);document.title=(title?title.dataset[language]+" | ":"")+"Portal de Bodas Events"}
+  function renderRoute(){route=getRoute();document.querySelectorAll(".view").forEach(v=>v.hidden=v.dataset.view!==route);document.getElementById("route-extras").hidden=route==="/";document.querySelectorAll("[data-gallery-route]").forEach(fig=>fig.hidden=fig.dataset.galleryRoute!==route);document.querySelectorAll("[data-route]").forEach(a=>{if(a.dataset.route===route)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});closeMenu();translate();window.scrollTo(0,0)}
+  document.addEventListener("click",e=>{const link=e.target.closest("[data-route]");if(link){e.preventDefault();const target=link.dataset.route;if(getRoute()===target)renderRoute();else location.hash=target;return}if(!e.target.closest(".dropdown"))closeDropdowns();if(!e.target.closest(".site-header"))closeMenu()});
+  toggle.addEventListener("click",()=>{const open=menu.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",language==="es"?(open?"Cerrar menú":"Abrir menú"):(open?"Close menu":"Open menu"));if(!open)closeDropdowns()});
+  dropdowns.forEach(d=>d.querySelector("button").addEventListener("click",()=>{const opening=!d.classList.contains("open");closeDropdowns();d.classList.toggle("open",opening);d.querySelector("button").setAttribute("aria-expanded",String(opening))}));
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")closeMenu()});
+  document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>{language=b.dataset.lang;try{localStorage.setItem("portal-language",language)}catch(_){}translate()}));
+  document.getElementById("inquiry-form").addEventListener("submit",e=>e.preventDefault());
+  window.addEventListener("hashchange",renderRoute);
+  renderRoute();if(window.lucide)lucide.createIcons();
 </script>
  
 </body></html>
